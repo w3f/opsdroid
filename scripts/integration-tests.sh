@@ -14,7 +14,6 @@ run_tests() {
 
 main(){
     /scripts/build-helmfile.sh
-    helm install --generate-name ./charts/opsdroid
     run_tests
 }
 

@@ -12,5 +12,5 @@ releases:
   chart: w3f/opsdroid
   version: 0.1.0
   {{ else }}
-  chart: ../chart/opsdroid
+  chart: ../charts/opsdroid
   {{ end }}

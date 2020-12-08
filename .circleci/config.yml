@@ -38,12 +38,15 @@ workflows:
             tags:
               only: /.*/
       - integrationTests:
+          filters:
+            tags:
+              only: /.*/
           requires:
             - helmLint
       - publishChart:
           filters:
             branches:
-              only: master
+              only: main
             tags:
               only: /[0-9]+(\.[0-9]+)*/
           requires:

@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           command: |
-            helm lint ./charts/opsdroid
+            helm lint ./chart/opsdroid
 
   integrationTests:
     docker:
